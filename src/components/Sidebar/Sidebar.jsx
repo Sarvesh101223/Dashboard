@@ -41,9 +41,8 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <a href="#">
-                            <i className="bi bi-circle">
-                                <span>Logistic</span>
-                            </i>
+                            <i className="bi bi-circle"></i>
+                            <span>Logistic</span>
                         </a>
                     </li>
                 </ul>
