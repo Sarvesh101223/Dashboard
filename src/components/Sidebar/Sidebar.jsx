@@ -1,4 +1,6 @@
 import './Sidebar.css';
+import navList from '../../data/navItem';
+import NavItem from './NavItem';
 
 const Sidebar = () => {
     return(
@@ -45,6 +47,8 @@ const Sidebar = () => {
                             <span>Logistic</span>
                         </a>
                     </li>
+                    
+
                 </ul>
             </li>
 
@@ -54,29 +58,26 @@ const Sidebar = () => {
                 data-bs-toggle="collapse"
                 className="nav-link collapsed"
                 >
-                    <i className="bi bi-journal-text">
+                    <i className="bi bi-journal-text"></i>
                         <span>Forms</span>
                         <i className="bi bi-chevron-down ms-auto"></i>
-                    </i>
                 </a>
 
                 <ul id="forms-nav" 
                 className="nav-content collapse"
-                data-bs-parent="sidebar-nav"
+                data-bs-parent="#sidebar-nav"
                 >
                     <li>
                         <a href="#">
-                            <i className="bi bi-cirlce">
-                                <span>Application Form</span>
-                            </i>
+                            <i className="bi bi-circle"></i>
+                            <span>Application Form</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <i className="bi bi-circle">
-                                <span>Release Form</span>
-                            </i>
+                            <i className="bi bi-circle"></i>
+                            <span>Release Form</span>
                         </a>
                     </li>
 
@@ -135,9 +136,35 @@ const Sidebar = () => {
                 className='nav-content collapse'
                 data-bs-parent="#sidebar-nav"
                 >
+                    <li>
+                        <a href="#">
+                            <i className="bi bi-circle"></i>
+                            <span>Bar-chart</span>
+                        </a>
+                    </li>
                     
+                    <li>
+                        <a href="#">
+                            <i className="bi bi-circle"></i>
+                            <span>Pie Chart</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i className="bi bi-circle"></i>
+                            <span>Line Chart</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
+
+            <li className="nav-heading">Pages</li>
+            
+            {navList.map(nav => (
+                <NavItem key={nav._id} nav={nav}/>
+            ))}
+
         </ul>
      </aside>
     );

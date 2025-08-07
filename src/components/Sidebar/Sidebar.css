@@ -117,6 +117,20 @@
 }
 
 .sidebar-nav .nav-content{
-    padding: 5px 0 0;
+    padding: 5px 0 0 0;
     margin: 0;
+}
+
+.sidebar-nav .nav-content li{
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    color: #012970;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav .nav-content li a i{
+    font-size: 6px;
+    margin-right: 10px;
 }
