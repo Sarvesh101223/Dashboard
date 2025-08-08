@@ -1,9 +1,11 @@
+import './BudgetReport.css';
 import { useState } from 'react';
-import './Report.css';
-import CardFilter from '../Card/CardFilter';
-import ReportCharts from './ReportCharts';
 
-const Report = () => {
+import CardFilter from '../Card/CardFilter';
+import BudgetChart from './BudgetChart';
+
+const BudgetReport = () => {
+
     const [filter, setFilter] = useState('Today');
 
     const handleFilterChange = filter => setFilter(filter)
@@ -11,14 +13,16 @@ const Report = () => {
     return(
         <div className="card">
             <CardFilter filterChange={handleFilterChange}/>
-            <div className="card-body">
+            <div className="card-body pb-0">
                 <h5 className="card-title">
-                    Reports <span>{filter}</span>
+                    Budget Report <span>| {filter}</span>
                 </h5>
-                <ReportCharts />
+
+                <BudgetChart />
             </div>
         </div>
     )
+
 }
 
-export default Report;
+export default BudgetReport;
