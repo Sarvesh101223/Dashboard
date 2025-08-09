@@ -10,6 +10,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+import BackToTop from './components/BackToTop/BackToTop';
 
 const App = () => {
   return(
@@ -17,6 +19,8 @@ const App = () => {
       <Header />
       <Sidebar />
       <Main />
+      <Footer />
+      <BackToTop />
     </div>
   )
 }
