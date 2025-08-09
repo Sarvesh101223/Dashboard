@@ -1,4 +1,6 @@
+
 import './Sidebar.css';
+import { Link } from 'react-router-dom';
 import navList from '../../data/navItem';
 import NavItem from './NavItem';
 
@@ -7,10 +9,10 @@ const Sidebar = () => {
      <aside id='sidebar' className='sidebar'>
         <ul className="sidebar-nav" id='sidebar-nav'>
             <li className="nav-item">
-                <a href="/" className="nav-link">
+                <Link to="/" className="nav-link">
                     <i className="bi bi-grid"></i>
                     <span>Dashboard</span>
-                </a>
+                </Link>
             </li>
             
             <li className="nav-item">
@@ -30,25 +32,23 @@ const Sidebar = () => {
                 data-bs-parent="#sidebar-nav"
                 >
                     <li>
-                        <a href="#">
+                        <Link to="/customers">
                             <i className="bi bi-circle"></i>
                             <span>Customers</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/suppliers">
                             <i className="bi bi-circle"></i>
                             <span>Suppliers</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/logistic">
                             <i className="bi bi-circle"></i>
                             <span>Logistic</span>
-                        </a>
+                        </Link>
                     </li>
-                    
-
                 </ul>
             </li>
 
@@ -68,24 +68,24 @@ const Sidebar = () => {
                 data-bs-parent="#sidebar-nav"
                 >
                     <li>
-                        <a href="#">
+                        <Link to="/application-form">
                             <i className="bi bi-circle"></i>
                             <span>Application Form</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <Link to="/release-form">
                             <i className="bi bi-circle"></i>
                             <span>Release Form</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <Link to="/cancellation-form">
                             <i className="bi bi-circle"></i>
                             <span>Cancellation Form</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </li>
@@ -106,17 +106,17 @@ const Sidebar = () => {
                 data-bs-parent="#sidebar-nav"
                 >
                     <li>
-                        <a href="#">
+                        <Link to="/general-tables">
                             <i className="bi bi-circle"></i>
                             <span>General Tables</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <Link to="/data-tables">
                             <i className="bi bi-circle"></i>
                             <span>Data Tables</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </li>
@@ -137,24 +137,24 @@ const Sidebar = () => {
                 data-bs-parent="#sidebar-nav"
                 >
                     <li>
-                        <a href="#">
+                        <Link to="/bar-chart">
                             <i className="bi bi-circle"></i>
-                            <span>Bar-chart</span>
-                        </a>
+                            <span>Bar Chart</span>
+                        </Link>
                     </li>
                     
                     <li>
-                        <a href="#">
+                        <Link to="/pie-chart">
                             <i className="bi bi-circle"></i>
                             <span>Pie Chart</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <Link to="/line-chart">
                             <i className="bi bi-circle"></i>
                             <span>Line Chart</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </li>

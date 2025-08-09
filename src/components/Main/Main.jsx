@@ -1,14 +1,4 @@
-import './Main.css';
-import PageTitle from '../PageTitle/PageTitle';
-import Dashboard from '../Dashboard/Dashboard';
-
-const Main = () => {
-    return(
-        <main id="main" className="main">
-            <PageTitle page='Dashboard'/>
-            <Dashboard />
-        </main>
-    )
+// This component is no longer needed as routing is handled in App.jsx
+export default function Main() {
+    return null;
 }
-
-export default Main;

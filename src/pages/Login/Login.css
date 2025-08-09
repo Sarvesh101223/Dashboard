@@ -1,0 +1,24 @@
+
+.register {
+  background: #f6f9ff;
+}
+
+.register .card {
+  margin-bottom: 3rem;
+}
+
+.register .card-body {
+  padding: 2rem 3rem;
+}
+
+.register .logo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.register .logo h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+  color: #012970;
+}

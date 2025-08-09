@@ -1,0 +1,12 @@
+
+.register {
+  background: #f6f9ff;
+}
+
+.register .card {
+  margin-bottom: 3rem;
+}
+
+.register .card-body {
+  padding: 2rem 3rem;
+}
