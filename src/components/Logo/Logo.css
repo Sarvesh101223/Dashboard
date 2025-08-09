@@ -19,3 +19,37 @@
     color: #012970;
     font-family: 'Nunito', sans-serif;
 }
+
+/* Responsive logo typography */
+@media (max-width: 768px) {
+    .logo span {
+        font-size: 22px;
+    }
+    
+    .logo img {
+        max-height: 22px;
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo span {
+        font-size: 20px;
+    }
+    
+    .logo img {
+        max-height: 20px;
+        margin-right: 3px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo span {
+        font-size: 28px;
+    }
+    
+    .logo img {
+        max-height: 28px;
+        margin-right: 8px;
+    }
+}

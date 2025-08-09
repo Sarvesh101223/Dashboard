@@ -22,3 +22,32 @@
   font-weight: 700;
   color: #012970;
 }
+
+/* Responsive login/register typography */
+@media (max-width: 768px) {
+    .register .logo h1 {
+        font-size: 36px;
+    }
+    
+    .register .card-body {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .register .logo h1 {
+        font-size: 28px;
+    }
+    
+    .register .card-body {
+        padding: 1rem 1.5rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+}

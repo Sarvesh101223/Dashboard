@@ -10,6 +10,63 @@
     padding: 0;
 }
 
+/* Responsive card typography */
+@media (max-width: 768px) {
+    .dashboard .info-card h6 {
+        font-size: 22px;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        font-size: 0.9rem;
+    }
+    
+    .dashboard .card-icon {
+        font-size: 26px;
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard .info-card h6 {
+        font-size: 18px;
+    }
+    
+    .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .card-body {
+        font-size: 0.85rem;
+    }
+    
+    .dashboard .card-icon {
+        font-size: 22px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dashboard .info-card h6 {
+        font-size: 32px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .dashboard .card-icon {
+        font-size: 36px;
+        width: 68px;
+        height: 68px;
+    }
+}
+
 .dashboard .card-icon{
     font-size: 32px;
     line-height: 0;

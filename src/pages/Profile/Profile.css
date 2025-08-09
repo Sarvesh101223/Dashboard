@@ -14,6 +14,44 @@
   font-size: 18px;
 }
 
+/* Responsive profile typography */
+@media (max-width: 768px) {
+    .profile .profile-card h2 {
+        font-size: 20px;
+    }
+    
+    .profile .profile-card h3 {
+        font-size: 16px;
+    }
+    
+    .profile .profile-overview .row {
+        font-size: 14px;
+    }
+    
+    .profile .profile-card .social-links a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile .profile-card h2 {
+        font-size: 18px;
+    }
+    
+    .profile .profile-card h3 {
+        font-size: 14px;
+    }
+    
+    .profile .profile-overview .row {
+        font-size: 13px;
+    }
+    
+    .profile .profile-card .social-links a {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+}
+
 .profile .profile-card .social-links a {
   font-size: 20px;
   display: inline-block;

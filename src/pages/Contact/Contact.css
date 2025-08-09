@@ -30,3 +30,38 @@
   font-size: 14px;
   color: #484848;
 }
+
+/* Responsive contact typography */
+@media (max-width: 768px) {
+    .contact .info-item h4 {
+        font-size: 18px;
+    }
+    
+    .contact .info-item p {
+        font-size: 13px;
+    }
+    
+    .contact .info-item i {
+        font-size: 18px;
+        width: 48px;
+        height: 48px;
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact .info-item h4 {
+        font-size: 16px;
+    }
+    
+    .contact .info-item p {
+        font-size: 12px;
+    }
+    
+    .contact .info-item i {
+        font-size: 16px;
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+    }
+}
