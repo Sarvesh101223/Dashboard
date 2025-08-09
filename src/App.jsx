@@ -20,7 +20,7 @@ import Contact from './pages/Contact/Contact';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
 import Settings from './pages/Settings/Settings';
-import Blank from './pages/Blank/Blank';
+import Blank from './pages/Blank/Blank';i
 import Customers from './pages/Documents/Customers';
 import Suppliers from './pages/Documents/Suppliers';
 import Logistic from './pages/Documents/Logistic';
