@@ -30,19 +30,13 @@
     background: #aab7cf;
 }
 
-@media (max-width: 1200px){
+/* Desktop screens (1200px and above) */
+@media (min-width: 1200px){
     #main, #footer{
         margin-left: 300px;
+        transition: all 0.3s ease;
     }
-}
 
-@media (max-width: 1199px){
-    .toggle-sidebar .sidebar{
-        left: 0;
-    }
-}
-
-@media (min-width: 1200px){
     .toggle-sidebar #main,
     .toggle-sidebar #footer{
         margin-left: 0;
@@ -50,6 +44,29 @@
 
     .toggle-sidebar .sidebar{
         left: -300px;
+    }
+}
+
+/* Tablet and mobile screens (below 1200px) */
+@media (max-width: 1199px){
+    #main, #footer{
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar{
+        left: 0;
+    }
+}
+
+/* Mobile screens (below 768px) */
+@media (max-width: 768px){
+    #main, #footer{
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    .sidebar{
+        width: 280px;
     }
 }
 
